@@ -48,3 +48,17 @@ contract Caller {
         emit Response(success, data);
     }
 }
+
+contract TestHello {
+    event Response(bool success, bytes data);
+
+    // Let's imagine that contract Caller does not have the source code for the
+    // contract Receiver, but we do know the address of contract Receiver and the function to call.
+    function testCallFoo(address payable _addr) public payable {
+        // You can send ether and specify a custom gas amount
+        (bool success, bytes memory data) = _addr.call(abi.encodeWithSignature("print()"));
+
+        emit Response(success, data);
+    }
+    // 0x814dC9B635Db9F6507cd23bb27C6844E6795f71c
+}
