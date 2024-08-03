@@ -1,7 +1,7 @@
 solidity
 https://solidity-by-example.org/app/erc20/
 
-#### hardhat
+#### HardHat
 
 https://hardhat.org/tutorial/setting-up-the-environment
 
@@ -30,14 +30,16 @@ npm install --save-dev @nomicfoundation/hardhat-toolbox
 ###### Testing contracts
 
 1 under './test' directory
-2 npx hardhat test
+2 npx hardhat test.
 
 ###### Debug with HardHat Network
 
 1 import "hardhat/console.sol";
 2 npx hardhat test
 
-###### Deploy to Live Network
+###### Deploy to a Live Network
 
 1 under ./ignition/modules directory
-2 npx hardhat ignition deploy ./ignition/modules/Token.js --network <network-name>
+2 npx hardhat ignition deploy ./ignition/modules/Token.js --network `<network-name>`
+
+npx hardhat vars set GANACHE_PRIVATE_KEY_0
