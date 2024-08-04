@@ -1,8 +1,4 @@
-artifacts
-.deps
-.states
-.gitignore
-
 node_modules
+artifacts
 cache
 deployments
