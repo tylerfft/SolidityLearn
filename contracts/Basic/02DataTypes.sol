@@ -3,11 +3,12 @@ pragma solidity >=0.8.0 <0.9.0;
 
 import "@openzeppelin/contracts/utils/Strings.sol";
 
-contract Primitives{
+contract Primitives {
     bool public boo = true;
 
     address public addr = 0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c;
 
+    bytes public mbytes;
 
     bytes32 public b32;
 
@@ -21,10 +22,9 @@ contract Primitives{
 
     uint256 public constant MY_UINT = 123; // Constants are variables that cannot be modified.
 
-    function doSomething() public view returns (string memory){
+    function doSomething() public view returns (string memory) {
         // Here are some global variables
         uint256 timestamp = block.timestamp; // Current block timestamp
         return Strings.toString(timestamp);
     }
-
 }
