@@ -5,7 +5,7 @@ const {
 // const { anyValue } = require("@nomicfoundation/hardhat-chai-matchers/withArgs");
 const { expect } = require("chai");
 
-describe("Token contract", function () {
+describe("Swap contract", function () {
   async function deployAliceCoinAndBobCoin() {
     const [, Alice, Bob] = await ethers.getSigners();
 

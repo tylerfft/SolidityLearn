@@ -3,16 +3,23 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npx hardhat compile",
+    "deploy-Token-ganache": "npx hard ignition deploy ignition/modules/Token.js --network ganache"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "hardhat": "^2.22.7"
+    "fs-extra": "^11.2.0",
+    "hardhat": "^2.22.7",
+    "hardhat-gas-reporter": "^2.2.0"
   },
   "dependencies": {
-    "@chainlink/contracts": "^1.2.0"
+    "@chainlink/contracts": "^1.2.0",
+    "harhat": "^1.0.1",
+    "solc": "^0.8.26",
+    "solidity-coverage": "^0.8.12"
   }
 }
