@@ -23,6 +23,7 @@ module.exports = {
     sepolia: {
       url: `https://sepolia.infura.io/v3/${INFURA_KEY}`,
       accounts: [SEPOLIA_PRIVATE_KEY_0],
+      chainId: 11155111,
     },
   },
   etherscan: {

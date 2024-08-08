@@ -13,5 +13,8 @@ contract SimpleStorage {
     function addPerson(string memory _name, uint256 _favoriteNumber) public {
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
+
+    function retrieve() public view returns (uint256) {
+        return favoriteNumber;
+    }
 }
-// 0xd9145CCE52D386f254917e481eB44e9943F39138

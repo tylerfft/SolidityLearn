@@ -86,7 +86,7 @@ hardhat console --network <>
 
 let token = await ethers.getContractAt("Token","0xf9f1d401359952a1882c55577409600538ba11f1");
 
-#### test
+#### Test
 
 ###### hardhat-gas-reporter
 
@@ -105,4 +105,12 @@ require("solidity-coverage");
 
 hh coverage
 
+```
+
+```
+Uncaught TypeError: (0 , ethers_1.getAddress) is not a function
+```
+
+```
+yarn add --dev hardhat @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
 ```
